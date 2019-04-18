@@ -1,1 +1,1 @@
-# CSC318-prototype
+# interview-preparation-prototype
