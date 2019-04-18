@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Let's Get It | #esketit(skrrrt)</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div id="content">
+			<div class="top_menu">
+				<button class="small_menu btn-gradient mini red" id="back_btn">Back</button>	
+			</div>
+
+			<div class="home">
+				<h1 class="page_header"><img src="logo.png" alt="Let's Get It"></h1>
+				<p class="welcome"> Hi, welcome to the <strong>Let's Get It</strong> interview preparation tool. To create practice interview questions, head over to <strong>Interview Questions</strong>. When you're ready, go over to <strong>Practice</strong> and record your answers. View your <strong>Recordings</strong> and <strong>Friend Feedback</strong> to find out what to improve on.
+				</p></br>
+				<button class="btn-gradient blue block menu" id="interview_btn">Interview Questions</button><br>
+				<button class="btn-gradient blue block menu" id="practice_btn">Practice</button><br>
+				<button class="btn-gradient blue block menu" id="recordings_btn">Recordings</button><br>
+				<button class="btn-gradient blue block menu" id="friend_feedback_btn">Friend Feedback</button>
+			</div>
+
+			<div class="friend_feedback_page">
+				<h1 class="page_header">Friend Feedback</h1>
+				<ol id="feedback_list"></ol>
+			</div>
+
+			<div class="interview">
+				<h1 class="page_header">Interview Questions</h1>
+				<div id="interview_questions"></div>
+				<div class="question_menu">
+					<button class="small_menu btn-gradient blue mini" id="add_question_btn">Add Questions</button>
+					<button class="small_menu btn-gradient blue mini" id="edit_question_btn">Edit Questions</button>
+					<button class="small_menu btn-gradient blue mini" id="delete_question_btn">Delete Questions</button>
+					<button class="small_menu btn-gradient blue mini" id="import_question_btn">Import Questions</button>
+					<button class="small_menu btn-gradient blue mini" id="save_question_btn">Save Questions</button>
+					<button class="small_menu btn-gradient blue mini" id="confirm_delete_question_btn">Confirm Deletes</button>
+				</div>
+
+				<div id=import_dialog title="IMPORT QUESTIONS">
+					<p>Please select a text file you would like to import questions from:</p>
+					<input type="file" id="file_input">
+				</div>
+
+				<pre id="file_content"></pre>
+
+			</div>
+
+			<div class="practice">
+				<h1 class="page_header">Practice</h1>
+				<div id="practice_question"></div>
+				<div class="practice_video">
+					<button id="recButton" class="Rec" style=""></button>
+					<button class='record'></button>
+					<span id="timer_label">0:00</span>
+				</div>
+				<button id='recordBtn' class="btn-gradient blue">Start Recording</button>
+				<button id='next' class="btn-gradient blue">Next Question</button>
+			</div>
+
+			<div class="recordings">
+				<h1 class="page_header">Recordings</h1>	
+				<div id=view_dialog title="VIEW RECORDING"></div>
+
+				<div id=share_dialog title="SHARE RECORDING">
+					<a href="#" class="share_btn zocial facebook icon" id="facebook">Facebook</a>
+					<a href="#" class="share_btn zocial twitter icon" id="twitter">Twitter</a>
+					<a href="#" class="share_btn zocial linkedin icon" id="linkedin">LinkedIn</a>
+					<a href="#" class="share_btn zocial gmail icon" id="email">Email</a><br>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSeU5PwQgxRLETHiA1a-GZsbkge-3MfKXEPAsMPV4D2mGHcuow/viewform?usp=sf_link" target="_blank">Open link in new tab</a><br>
+					
+				</div>
+				<div id=friend_dialog title="FRIEND FEEDBACK"></div>
+				<div id=system_dialog title="SYSTEM FEEDBACK"></div>
+
+				<ol id="recordings_list"></ol>
+			</div>
+		</div>
+	</body>
+</html>
